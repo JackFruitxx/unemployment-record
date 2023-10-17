@@ -17,6 +17,7 @@ files.forEach(function (file) {
 
 
 module.exports = {
+  base:'/unemployment-record',
   title: '🍉的失业生活',
   description: '🍉',
   themeConfig: {
