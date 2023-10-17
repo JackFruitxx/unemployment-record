@@ -1,0 +1,14 @@
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+.vscode
+.history
+README.html
+cli-config/ncp.local.json
+.stylelintcache
+.idea
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
