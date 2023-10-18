@@ -1,19 +1,19 @@
-// const fs = require('fs');
-// const path = require('path');
+const fs = require('fs');
+const path = require('path');
 
-// const directoryPath = path.join(__dirname, '../days');
+const directoryPath = path.join(__dirname, '../days');
 
-// const sidebarConfig = [];
+const sidebarConfig = [];
 
-// const files = fs.readdirSync(directoryPath);
+const files = fs.readdirSync(directoryPath);
 
-// files.forEach(function (file) {
-//   console.log(file);
-//   sidebarConfig.push({
-//     title: `${file.split('.')[0]}`,
-//     path: `/days/${file}`,
-//   });
-// });
+files.forEach(function (file) {
+  console.log(file);
+  sidebarConfig.push({
+    title: `${file.split('.')[0]}`,
+    path: `/days/${file}`,
+  });
+});
 
 
 module.exports = {
@@ -25,12 +25,7 @@ module.exports = {
     sidebar: [{
       title: '日记',
       collapsable: false,
-      children: [
-        {
-          title: `10-17`,
-          path: `/days/10-17.md`,
-        }
-      ],
+      children: sidebarConfig,
     }]
   },
   dest: '../docs',
